@@ -27,7 +27,7 @@ $ singularity run tensorflow-jupyterhub.img
 ```
 $ singularity exec tensorflow-jupyterhub.img python hello-world.py
 ```
-- (https://github.com/mcburton)[mcburton] and I are working on JupyterHub
+- [mcburton](https://github.com/mcburton) and I are working on JupyterHub
   plugins to handle Singularity Hub images cleanly.
 
 To Do
