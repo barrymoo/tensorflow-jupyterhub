@@ -5,12 +5,12 @@ Singularity Container with Tensorflow and Jupyter Notebook
     - If you would like this built for another driver, submit an issue
 - Borrowed `links.sh` from https://github.com/drorlab/tf-singularity
 - I extracted CuDNN here because the download link expires
-- Building the image
+- Building the Singularity container:
 ```
 $ sudo singularity create -s 3072 tensorflow-jupyterhub.img
 $ sudo singularity bootstrap tensorflow-jupyterhub.img Singularity
 ```
-- Running jupyter
+- Running local jupyter server:
 ```
 $ singularity run tensorflow-jupyterhub.img
 [I 21:58:36.327 NotebookApp] Serving notebooks from local directory: <some directory>
@@ -27,12 +27,12 @@ $ singularity run tensorflow-jupyterhub.img
 ```
 $ singularity exec tensorflow-jupyterhub.img python hello-world.py
 ```
-- Me and @mcburton are working on JupyterHub plugins to handle Singularity Hub
-  images cleanly.
+- (https://github.com/mcburton)[mcburton] and I are working on JupyterHub
+  plugins to handle Singularity Hub images cleanly.
 
 To Do
 ---
 
 1. Possibly indicate any bloat in the image and clear it out, if possible
     - Tensorflow DockerHub Compressed Image with GPU is 2 GB, mine is 3 GB
-2. Working on JupyterHub plugin to deploy images from Singularity Hub
+2. Working on JupyterHub plugin to deploy images from SingularityHub
