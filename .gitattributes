@@ -1,0 +1,2 @@
+cudnn/lib64 filter=lfs diff=lfs merge=lfs -text
+cudnn/include filter=lfs diff=lfs merge=lfs -text
