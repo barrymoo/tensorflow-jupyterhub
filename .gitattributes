@@ -1,2 +1,4 @@
-cudnn/lib64 filter=lfs diff=lfs merge=lfs -text
-cudnn/include filter=lfs diff=lfs merge=lfs -text
+cudnn/lib64/libcudnn.so.5.1.10 filter=lfs diff=lfs merge=lfs -text
+cudnn/lib64/libcudnn_static.a filter=lfs diff=lfs merge=lfs -text
+cudnn/lib64/libcudnn.so filter=lfs diff=lfs merge=lfs -text
+cudnn/lib64/libcudnn.so.5 filter=lfs diff=lfs merge=lfs -text
